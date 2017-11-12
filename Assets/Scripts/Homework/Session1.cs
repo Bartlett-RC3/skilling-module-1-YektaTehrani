@@ -14,7 +14,7 @@ public class Session1 : MonoBehaviour {
 	float myFirstFloatNumber = 1.63f; 
 
 	//Text
-	public string myFirstString = "MY Text is somewhere."; //A Variable Can Change
+	public string myFirstString = "My Text is somewhere."; //A Variable Can Change
 
 	//Logical variable
 	bool MyFirstBoolean = true;
@@ -33,7 +33,7 @@ public class Session1 : MonoBehaviour {
 	//Scope -- Type -- Variables -- Body (Instructions)
 	// Use this for initialization
 	void Start () {
-		Debug.Log("Addition of 5 and 3 is: " + AdditionOfNumbers(5,3));	
+		Debug.Log(message: "Addition of 5 and 3 is: " + AdditionOfNumbers(5,3));	
 		myFloatArray[2] = 3.2f;
 		myFloatArray[4] = 5.6f;
 		myFloatArray[1] = 9.2f;
@@ -50,8 +50,8 @@ public class Session1 : MonoBehaviour {
 		Debug.Log( "Hello world!" );
 	}
 
-	int AdditionOfNumbers(int number1, int number2) 
-	{
-		int additionResult = number1 + number2;
-		return additionResult;
-	}
+    int AdditionOfNumbers(int number1, int number2)
+    {
+        int additionResult = number1 + number2;
+        return additionResult;
+    }
