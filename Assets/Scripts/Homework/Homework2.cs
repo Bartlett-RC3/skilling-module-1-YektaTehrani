@@ -102,13 +102,3 @@ public class Homework2 : MonoBehaviour
     Debug.Log("These pets are " + houseBuddy.Count + " my buddies");
 
 	}
-
-
-
-
-
-
-
-
-
-
