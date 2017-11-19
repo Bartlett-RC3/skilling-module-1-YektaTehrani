@@ -41,14 +41,17 @@ public class Homework2 : MonoBehaviour
         }
 
     }
-    
-  
+    private void Update()
+    {
         int HomeWork2Sum = 50;
         for (int i = b; i >= a; i++)
         {
-            HomeWrok2Sum = Homework2Sum + i;
+            HomeWork2Sum = HomeWork2Sum + i;
         }
-       Debug.Log("The sum of the numbers from " + a + " to " + b + " is " + HomeWork2Sum);
+        Debug.Log("The sum of the numbers from " + a + " to " + b + " is " + HomeWork2Sum);
+    }
+
+
 
 
     // Class Definition
@@ -85,20 +88,14 @@ public class Homework2 : MonoBehaviour
             weight = mealsPerDay + 1;
         }
 
+    }
 
     //Creating the dogs
+    
     Dogs Jack = new Dogs(4, 10, 4, "Jack", true, false, 80);
     Dogs Rose = new Dogs(6, 12, 3, "Rose", false, true, 90);
     Dogs Newton = new Dogs(1, 3, 4, "Newton", true, true, 100);
     Dogs HotDog = new Dogs(3, 9, 3, "HotDog", false, true, 99);
+}
 
-    Housebuddy.Add(Jack);
-    Housebuddy.Add(Rose);
-    Housebuddy.Add(Newton);
-    Housebuddy.Add(HotDog);
-
-
-
-    Debug.Log("These pets are " + houseBuddy.Count + " my buddies");
-
-	}
+    
