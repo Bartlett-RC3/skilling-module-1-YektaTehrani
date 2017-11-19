@@ -85,23 +85,6 @@ public class Homework2 : MonoBehaviour
             weight = mealsPerDay + 1;
         }
 
-    public override bool Equals(object obj)
-    {
-        var dogs = obj as Dogs;
-        return dogs != null &&
-               age == dogs.age &&
-               weight == dogs.weight &&
-               mealsPerDay == dogs.mealsPerDay &&
-               dogName == dogs.dogName &&
-               canTravel == dogs.canTravel &&
-               smelly == dogs.smelly &&
-               energy == dogs.energy &&
-               EqualityComparer<Dogs>.Default.Equals(Jack, dogs.Jack) &&
-               EqualityComparer<Dogs>.Default.Equals(Rose, dogs.Rose) &&
-               EqualityComparer<Dogs>.Default.Equals(Newton, dogs.Newton) &&
-               EqualityComparer<Dogs>.Default.Equals(HotDog, dogs.HotDog);
-    }
-
 
     //Creating the dogs
     Dogs Jack = new Dogs(4, 10, 4, "Jack", true, false, 80);
