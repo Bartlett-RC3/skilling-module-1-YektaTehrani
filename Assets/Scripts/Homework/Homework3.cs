@@ -18,6 +18,7 @@ public class Homework3 : MonoBehaviour {
     bool moveDown = false;
     public Color cubeColor;
     public Material cubeMaterial;
+    
 
     // Use this for initialization
     void Start () {
@@ -25,15 +26,16 @@ public class Homework3 : MonoBehaviour {
         cubeMaterial.color = Color.blue;
         
     }
-	
-	// Update is called once per frame
+
+    // Update is called once per frame
     // Moving Cube Up and Down
-	void Update () {
+    void Update()
+    {
         if (moveUp == true)
         {
             if (counter <= 10)
             {
-                gameObject.transform.Translate(Vector3.left);
+                gameObject.transform.Translate(Vector3.up);
                 counter++;
             }
             else
@@ -42,12 +44,12 @@ public class Homework3 : MonoBehaviour {
                 moveDown = true;
                 counter = 0;
             }
-        } 
+        }
         if (moveDown == true)
         {
             if (counter <= 10)
             {
-                gameObject.transform.Translate(Vector3.right);
+                gameObject.transform.Translate(Vector3.down);
                 counter++;
             }
             else
@@ -57,5 +59,19 @@ public class Homework3 : MonoBehaviour {
                 counter = 0;
             }
         }
+        if (Input.GetKey(KeyCode.Space) || Input.GetMouseButtonDown(0))
+        {
+            //Changing cube color with space button (blue to yellow)
+
+            if (cubeMaterial.color == Color.blue)
+            {
+                cubeMaterial.color = Color.yellow;
+            }
+            else
+            {
+                cubeMaterial.color = Color.blue;
+            }
+        }
     }
 }
+
